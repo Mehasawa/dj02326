@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block title %}
+        Шоколадка
+        {% endblock title %}
+
+    {% block content %}
+     <div class="container bg-light text-center">
+        <h2>{{ title }}</h2>
+        <img src="{% static pic %}" alt="">
+        <p>{{ desc }}</p>
+
+     </div>
+    {% endblock content %}
